@@ -9,6 +9,8 @@ export const load: Load = async () => {
     trpc.greetings.hello.query(),
     trpc.greetings.helloFromPrisma.query()
   ])
+
+  await new Promise((r) => setTimeout(r, 2000))
   
   return {
     trpcMsg,
