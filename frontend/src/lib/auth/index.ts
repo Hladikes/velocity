@@ -1,7 +1,6 @@
 import { writable, get } from 'svelte/store'
 import { redirect } from '@sveltejs/kit'
 import { browser } from '$app/environment'
-import { page, navigating } from '$app/stores'
 
 export const isAuthorized = writable(false)
 

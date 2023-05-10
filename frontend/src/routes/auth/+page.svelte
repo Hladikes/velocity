@@ -10,7 +10,9 @@
   }
 </script>
 
-<div transition:fly={{ y: -20, }} class="bg-white w-full h-full xl:h-auto xl:w-2/5 absolute rounded-lg border border-gray-300 p-10 shadow-md">
+<div 
+  transition:fly={{ y: -20, }} 
+  class="bg-white w-full h-full xl:h-auto xl:w-2/5 absolute rounded-lg border border-gray-300 p-10 shadow-md space-y-3">
   <h1 class="text-4xl mb-6">Authorize</h1>
   <button 
     disabled={!!$navigating}
